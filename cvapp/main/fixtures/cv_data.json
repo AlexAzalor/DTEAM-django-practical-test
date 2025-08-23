@@ -1,0 +1,41 @@
+[
+  {
+    "model": "main.cv",
+    "pk": 1,
+    "fields": {
+      "firstname": "John",
+      "lastname": "Smith",
+      "role": "Frontend Developer",
+      "bio": "I craft responsive and intuitive user interfaces with clean, modern design. My focus is on creating seamless user experiences using the latest web technologies.",
+      "contacts": "Email: john.smith@example.com | Phone: +5436542534",
+      "skills": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "projects": [2]
+    }
+  },
+  {
+    "model": "main.cv",
+    "pk": 2,
+    "fields": {
+      "firstname": "Alice",
+      "lastname": "Doe",
+      "role": "Backend Developer",
+      "bio": "I specialize in building robust, secure, and scalable server-side solutions. From designing APIs to optimizing databases, I ensure the engine behind every application runs smoothly.",
+      "contacts": "Email: alice.doe@example.com | Phone: +123456789",
+      "skills": [10, 11, 12, 13, 14, 15],
+      "projects": [1, 3]
+    }
+  },
+  {
+    "model": "main.cv",
+    "pk": 3,
+    "fields": {
+      "firstname": "Bob",
+      "lastname": "Red",
+      "role": "Full Stack Developer",
+      "bio": "I bring ideas to life from concept to deployment, handling both front-end and back-end development. My goal is to deliver complete, efficient, and user-friendly applications.",
+      "contacts": "Email: bob.red@example.com | Phone: +987654321",
+      "skills": [1, 4, 8, 10, 12, 14, 15],
+      "projects": [1, 2, 3]
+    }
+  }
+]

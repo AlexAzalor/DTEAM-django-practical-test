@@ -1,0 +1,77 @@
+[
+  {
+    "model": "main.skill",
+    "pk": 1,
+    "fields": { "name": "React" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 2,
+    "fields": { "name": "Next.js" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 3,
+    "fields": { "name": "JavaScript" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 4,
+    "fields": { "name": "TypeScript" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 5,
+    "fields": { "name": "HTML" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 6,
+    "fields": { "name": "CSS" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 7,
+    "fields": { "name": "SASS" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 8,
+    "fields": { "name": "Tailwind CSS" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 9,
+    "fields": { "name": "Playwright" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 10,
+    "fields": { "name": "Python" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 11,
+    "fields": { "name": "Flask" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 12,
+    "fields": { "name": "Django" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 13,
+    "fields": { "name": "FastAPI" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 14,
+    "fields": { "name": "PostgreSQL" }
+  },
+  {
+    "model": "main.skill",
+    "pk": 15,
+    "fields": { "name": "Pytest" }
+  }
+]
