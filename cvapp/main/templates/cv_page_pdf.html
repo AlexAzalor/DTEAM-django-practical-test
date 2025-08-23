@@ -1,8 +1,7 @@
-{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <div>
-  <h1><a href="">{{ cv_item.full_name }}</a></h1>
+  <h1>{{ cv_item.full_name }}</h1>
   <h2>{{cv_item.role}}</h2>
   <p>{{cv_item.bio}}</p>
   <span>{{cv_item.contacts}}</span>
@@ -23,16 +22,10 @@
     <h4>{{ project.title }}</h4>
     <p>{{ project.description }}</p>
     {% if project.link %}
-    <p>Link: <a href="{{ project.link }}" target="_blank">{{ project.link }}</a></p>
+    <p>Link: {{ project.link }}</p>
     {% endif %}
   </div>
   {% endfor %}
   {% endif %}
-
-  <a href="{% url 'download_cv_pdf' cv_item.id %}" class="btn">
-    <button>
-      Download as PDF
-    </button>
-  </a>
 </div>
 {% endblock %}
