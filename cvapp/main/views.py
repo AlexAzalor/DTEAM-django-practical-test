@@ -6,6 +6,10 @@ import pdfkit
 import tempfile
 import os
 
+from rest_framework import generics
+from .models import CV
+from .serializers import CVSerializer
+
 
 def main(request):
     cv_items = CV.objects.all()
@@ -51,3 +55,13 @@ def download_cv_pdf(request, pk):
 
     except Exception as e:
         return HttpResponse(f"Error generating PDF: {str(e)}", status=500)
+
+
+class CVListCreateView(generics.ListCreateAPIView):
+    queryset = CV.objects.all()
+    serializer_class = CVSerializer
+
+
+class CVDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = CV.objects.all()
+    serializer_class = CVSerializer

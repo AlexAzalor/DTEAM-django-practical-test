@@ -49,6 +49,20 @@ files = [
 django = ">=4.2"
 
 [[package]]
+name = "djangorestframework"
+version = "3.16.1"
+description = "Web APIs for Django, made easy."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "djangorestframework-3.16.1-py3-none-any.whl", hash = "sha256:33a59f47fb9c85ede792cbf88bde71893bcda0667bc573f784649521f1102cec"},
+    {file = "djangorestframework-3.16.1.tar.gz", hash = "sha256:166809528b1aced0a17dc66c24492af18049f2c9420dbd0be29422029cfc3ff7"},
+]
+
+[package.dependencies]
+django = ">=4.2"
+
+[[package]]
 name = "pdfkit"
 version = "1.0.0"
 description = "Wkhtmltopdf python wrapper to convert html to pdf using the webkit rendering engine and qt"
@@ -89,4 +103,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "94b748c579af21bbed229533c62add24f30803023f52bb36357ead4407a585b1"
+content-hash = "dcdfcf0372b9f25fe00be55f25787f9a8307c34290b2886fc484343a8c5c5138"
