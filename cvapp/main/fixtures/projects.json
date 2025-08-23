@@ -1,0 +1,29 @@
+[
+  {
+    "model": "main.project",
+    "pk": 1,
+    "fields": {
+      "title": "Title Seeker",
+      "description": "A platform with a database of titles, where there are many different creative filters for searching, the ability to rate, use a unique analysis system, see statistics, etc. The project was created to quickly find the desired title and reduce false expectations from watching.",
+      "link": "https://titleseeker.com"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 2,
+    "fields": {
+      "title": "Komunalka",
+      "description": "Platform for paying for utility services, account manager, viewing graphs with statistics, ability to connect more than one apartment, etc.",
+      "link": "https://www.komunalka.ua"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 3,
+    "fields": {
+      "title": "Bidhive",
+      "description": "It is a very rich manager that allows businesses to work more efficiently with bids/contracts/tenders. Tables, analytics, statistics, scrapers, history with timeline and much more. Servers are located in 3 regions – Australia, United Kingdom and US.",
+      "link": "https://bidhive.com"
+    }
+  }
+]

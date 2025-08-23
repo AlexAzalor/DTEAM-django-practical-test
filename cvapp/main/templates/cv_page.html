@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+  <h1><a href="">{{ cv_item.full_name }}</a></h1>
+  <h2>{{cv_item.role}}</h2>
+  <p>{{cv_item.bio}}</p>
+  <span>{{cv_item.contacts}}</span>
+</div>
+{% endblock %}

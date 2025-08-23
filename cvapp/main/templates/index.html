@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="border: 1px solid red; padding: 10px;">
+  {% for item in cv_items %}
+  <div>
+    <h1><a href="{% url 'cv_page' pk=item.pk %}">{{ item.full_name }}</a></h1>
+    <h2>{{item.role}}</h2>
+    <p>{{item.bio}}</p>
+    <span>{{item.contacts}}</span>
+  </div>
+
+  {% empty %}
+  <li>No menu items available.</li>
+  {% endfor %}
+
+</div>
+{% endblock %}
