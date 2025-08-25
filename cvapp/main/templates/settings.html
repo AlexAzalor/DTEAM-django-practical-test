@@ -1,0 +1,87 @@
+<h1>Django Settings</h1>
+
+<p><strong>DEBUG:</strong> {{ settings.DEBUG }}</p>
+<p><strong>Allowed Hosts:</strong> {{ settings.ALLOWED_HOSTS }}</p>
+<p><strong>Database name:</strong> {{ settings.DATABASES.default.NAME }}</p>
+<p><strong>Database engine:</strong> {{ settings.DATABASES.default.ENGINE }}</p>
+<p><strong>Root URLCONF:</strong> {{ settings.ROOT_URLCONF }}</p>
+<p><strong>WSGI App:</strong> {{ settings.WSGI_APPLICATION }}</p>
+<p><strong>Language:</strong> {{ settings.LANGUAGE_CODE }}</p>
+<p><strong>Timezone:</strong> {{ settings.TIME_ZONE }}</p>
+<p><strong>i18n:</strong> {{ settings.USE_I18N }}</p>
+<p><strong>TZ:</strong> {{ settings.USE_TZ }}</p>
+<p><strong>Static URL:</strong> {{ settings.STATIC_URL }}</p>
+<p><strong>Default auto field:</strong> {{ settings.DEFAULT_AUTO_FIELD }}</p>
+
+<h2>Installed Apps:</h2>
+<ul>
+  {% for item in settings.INSTALLED_APPS %}
+  <li>
+    {{ item }}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Middleware:</h2>
+<ul>
+  {% for item in settings.MIDDLEWARE %}
+  <li>
+    {{ item }}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Templates:</h2>
+<ul>
+  {% for item in settings.TEMPLATES %}
+  <li>
+    <strong>BACKEND: </strong>
+    {{ item.BACKEND }}
+  </li>
+
+  <li>
+    <strong>DIRS: </strong>
+    <ul>
+      {% for dir_item in settings.DIRS %}
+      <li>
+        {{ dir_item }}
+      </li>
+      {% empty %}
+      <li>
+        []
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+
+  <li>
+    <strong>App Dirs: </strong>
+    {{ item.APP_DIRS }}
+  </li>
+
+
+
+
+  <li>
+    <strong>Options: </strong>
+    <ul>
+      {% for ty in item.OPTIONS.context_processors %}
+      <li>
+        {{ ty }}
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+
+
+  {% endfor %}
+</ul>
+
+<h2>Auth Password Validators:</h2>
+<ul>
+  {% for validator in settings.AUTH_PASSWORD_VALIDATORS %}
+  <li>
+    <strong>{{ validator.NAME }}</strong>
+  </li>
+  {% endfor %}
+</ul>

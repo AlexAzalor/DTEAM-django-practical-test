@@ -11,6 +11,10 @@ from .models import CV
 from .serializers import CVSerializer
 
 
+def settings_view(request):
+    return render(request, 'settings.html')
+
+
 def main(request):
     cv_items = CV.objects.all()
     return render(request, 'index.html', {'cv_items': cv_items})
@@ -65,3 +69,4 @@ class CVListCreateView(generics.ListCreateAPIView):
 class CVDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = CV.objects.all()
     serializer_class = CVSerializer
+
